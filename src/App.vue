@@ -2,9 +2,16 @@
   <div id="app">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="form-group search-input">
-          <input placeholder="Enter title of book..." class="form-control input-lg" v-model="bookToSearch">
-          <button style ="btn btn-primary" v-on:click="searchBook()"/>
+        <div class="col-md-12">
+          <div class="form-group search-input">
+            <input placeholder="Enter title of book..." class="form-control input-lg" v-model="bookToSearch">
+            <div class="col-md-6">
+              <button type="button" class ="btn btn-primary btn-lg btn-block" v-on:click="searchBook()"> Search For Book </button>
+            </div>
+            <div class="col-md-6">
+              <button type="button" class="btn btn-danger btn-lg btn-block" v-on:click="searchBook()"> Random Books </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
