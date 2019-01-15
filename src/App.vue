@@ -1,8 +1,12 @@
 <template>
   <div id="app">
-    <div class="searchInput">
-      <input placeholder="Enter title of book..." v-model="bookToSearch">
-      <button style ="btn btn-primary" v-on:click="searchBook()"/>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="form-group search-input">
+          <input placeholder="Enter title of book..." class="form-control input-lg" v-model="bookToSearch">
+          <button style ="btn btn-primary" v-on:click="searchBook()"/>
+        </div>
+      </div>
     </div>
     <div class="resultsOutput">
       Total: {{ totalBooks }} 
@@ -50,14 +54,7 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
     <!--<img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>-->
